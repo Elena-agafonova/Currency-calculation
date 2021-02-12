@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <head>
+        <body>
+        <form>
+            <label>Выберите исходную валюту:</label>
+            <select name="from" id="from">
+                <option value="0" selected="selected">Доллар США</option>
+                <option value="1">Евро</option>
+                <option value="2">Рубль</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Введите сумму: </label>
+            <input name="cash" id="cash" class="is" type="text"/>
+            <br/>
+            <br/>
+            <label>Выберите расчетную валюту: </label>
+            <select name="to" id="to">
+                <option value="0">Доллар США</option>
+                <option value="1" selected="selected">Евро</option>
+                <option value="2">Рубль</option>
+            </select>
+            <br/>
+            <br/>
+            <input type=button value="Вычислить" onclick='GiveResult();'>
+            <br/>
+            <br/>
+            <label><span id="result" class="result"></span></label>
+        </form>
+        <script src="csript.js"></script>
+        
+    </body>
+</html>
